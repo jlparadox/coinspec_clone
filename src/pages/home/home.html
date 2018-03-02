@@ -1,39 +1,10 @@
 <ion-header>
-
-  <ion-navbar>
-    <button ion-button icon-only menuToggle>
-      <ion-icon ios="ios-menu" md="md-menu"></ion-icon>
-    </button>
-
-    <ion-title>
-      Page Title
-    </ion-title>
-
-    <ion-buttons end>
-      <button ion-button icon-only (click)="openModal()">
-        <ion-icon name="options"></ion-icon>
-      </button>
-    </ion-buttons>
-  </ion-navbar>
-
+  <app-header></app-header>
 </ion-header>
 
-<ion-content padding color="dark">
-  <ion-grid>
-    <ion-row class="main">
-      <ion-col col-md-3>
-        <button ion-button icon-only menuToggle>
-      <ion-icon name="menu"></ion-icon>
-    </button>
-        1 of 3
-      </ion-col>
-      <ion-col col-md-5>
-        2 of 3
-      </ion-col>
-      <ion-col col-md-4>
-        3 of 3
-      </ion-col>
-    </ion-row>
-  </ion-grid>
+<ion-content padding>
+  <section class="dashboard">
+    <app-dashboard></app-dashboard>
+  </section>
+  
 </ion-content>
-

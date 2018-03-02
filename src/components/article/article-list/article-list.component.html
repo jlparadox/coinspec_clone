@@ -1,0 +1,12 @@
+<section class="article-list">
+  <mat-list>
+    <h3 mat-subheader>{{title}}</h3>
+    <app-article-card mat-list-item *ngFor="let item of data.list"
+                      class="item"
+                      [ngClass]="{full: item.showFull}"
+                      [data]="item"
+                      (buttonClicked)="onButtonClicked(item)">
+
+    </app-article-card>
+  </mat-list>
+</section>

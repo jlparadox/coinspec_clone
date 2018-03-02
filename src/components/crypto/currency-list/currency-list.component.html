@@ -1,0 +1,11 @@
+
+<mat-list>
+  <h3 mat-subheader>{{title}}</h3>
+  <mat-list-item *ngFor="let coin of coinList">
+    <h4 mat-line><strong>{{coin.name}}</strong></h4>
+    <p matLine>
+      <span> {{coin.price}} </span>
+      <span class="col-2">{{coin.change}}</span>
+    </p>
+  </mat-list-item>
+</mat-list>

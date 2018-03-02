@@ -1,0 +1,42 @@
+.article-list {
+  flex: 1;
+  display: inline-flex;
+  align-items: flex-start;
+  align-content: stretch;
+  justify-content: space-around;
+  flex-flow: row wrap;
+  //margin: 1rem 0;
+  width: 100%;
+
+  mat-list {
+      width: 100%;
+  }
+
+  mat-card.article-card{
+    padding: 5rem !important;
+  }
+  
+  .item {
+    width: 95%;
+    flex-basis: 0;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: stretch;
+    margin-bottom: 1rem;
+    contain:none;
+
+    &.full {
+      //flex-basis: 100% !important;
+    }
+
+    @media screen {
+      @media (max-width: 1280px) {
+        flex-basis: 0;
+
+        &.full {
+          //flex-basis: 100% !important;
+        }
+      }
+    }
+  }
+}

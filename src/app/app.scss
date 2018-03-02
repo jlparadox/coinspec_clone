@@ -14,32 +14,48 @@
 // To declare rules for a specific mode, create a child rule
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
+/* You can add global styles to this file, and also import other style files */
 
-ion-app{
-    background: color($colors, dark) !important;
+body,
+html {
+  font-family: sans-serif;
 }
 
-ion-content {
-    background: color($colors, dark) !important;
-    color: #fff;
-    width: 102vw;
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url(assets/fonts/MaterialIcons-Regular.eot); /* For IE6-8 */
+  src: local('Material Icons'),
+  local('MaterialIcons-Regular'),
+  url(assets/fonts/MaterialIcons-Regular.woff2) format('woff2'),
+  url(assets/fonts/MaterialIcons-Regular.woff) format('woff'),
+  url(assets/fonts/MaterialIcons-Regular.ttf) format('truetype');
 }
 
-.bg-style {
-    background: color($colors, dark) !important;
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
 }
 
-.toolbar-background {
-  background: color($colors, dark) !important;
-  border-bottom: 1px solid #424242;
-}
-
-.scroll-content{
-        margin-top: 38px !important;
-}
-
-.content-md{
-    color: #fff;
-}
-
-
+@import "~@angular/material/prebuilt-themes/deeppurple-amber.css";
