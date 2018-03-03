@@ -5,8 +5,19 @@
     <mat-grid-list cols="12">
 
       <mat-grid-tile [colspan]="7">
-        <ion-title>Home</ion-title>
+        <ion-title>{{headerTitle}}</ion-title>
       </mat-grid-tile>
+
+      <mat-grid-tile [colspan]="2">
+        <section class="search-result">
+
+          <div *ngIf="searchTouched">
+            <p class="result-header" *ngIf="articleList.list.length !== 0">Found {{ articleList.list.length }} articles: </p>
+            <p class="result-header" *ngIf="articleList.list.length === 0">No articles found</p>
+          </div>
+
+        </section>
+    </mat-grid-tile>
 
       <mat-grid-tile [colspan]="3">
         <section class="search">
@@ -14,17 +25,6 @@
           <app-article-search-form (searchChanges)="onSearchChanges($event)">
           </app-article-search-form>
         </section>
-      </mat-grid-tile>
-
-      <mat-grid-tile [colspan]="2">
-          <section class="search-result">
-
-            <div *ngIf="searchTouched">
-              <p class="result-header" *ngIf="articleList.list.length !== 0">Found {{ articleList.list.length }} articles: </p>
-              <p class="result-header" *ngIf="articleList.list.length === 0">No articles found</p>
-            </div>
-
-          </section>
       </mat-grid-tile>
 
     </mat-grid-list>

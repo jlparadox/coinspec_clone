@@ -7,6 +7,7 @@ import { NavController, NavParams } from 'ionic-angular';
   templateUrl: 'ico.html'
 })
 export class ICOPage {
+  title: string = "ICO";
   selectedItem: any;
   icons: string[];
   items: Array<{title: string, note: string, icon: string}>;

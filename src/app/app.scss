@@ -59,3 +59,29 @@ html {
 }
 
 @import "~@angular/material/prebuilt-themes/deeppurple-amber.css";
+
+ion-toolbar{
+  .toolbar-background {
+    background-color: #3B495B;
+  }
+
+  ion-title{
+    .toolbar-title{
+      color: #F4F4F4;
+    }
+  }
+}
+
+mat-card{
+  button.mat-button{
+    background-color: #3B495B;
+
+    span{
+      color: #F4F4F4;
+    }
+  }
+}
+
+h3.mat-subheader{
+  color: #3B495B;
+}

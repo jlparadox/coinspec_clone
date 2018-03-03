@@ -16,7 +16,7 @@ import {
     SharedModule
   ],
   declarations: [
-    SearchFormComponent,
+    //SearchFormComponent,
     ArticleListComponent,
     ArticleCardComponent
   ],
@@ -24,7 +24,7 @@ import {
     SharedModule,
     ArticleCardComponent,
     ArticleListComponent,
-    SearchFormComponent,
+    //SearchFormComponent,
   ],
   providers: [
     ArticleService

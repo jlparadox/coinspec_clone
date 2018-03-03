@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { NavController } from 'ionic-angular';
 
 import {ArticleCard} from '../../components/article/article-card/article-card.component';
@@ -14,6 +14,7 @@ export class HeaderComponent implements OnInit {
 
   articleList: ArticleList;
   searchTouched: boolean = false;
+  @Input() headerTitle: string;
 
   constructor(public navCtrl: NavController, private articleService: ArticleService) {
     this.articleList = {

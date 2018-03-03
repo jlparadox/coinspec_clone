@@ -1,4 +1,8 @@
 app-header{
+
+    .toolbar-background {
+        background-color: #3B495B;
+    }
     
     ion-navbar{
         display: inline-flex !important;
@@ -8,8 +12,24 @@ app-header{
         white-space: nowrap;
         height: 2rem;
 
+        .button-inner{
+            ion-icon{
+                color: #F4F4F4;
+            }
+        }
+
+        ion-title{
+            .toolbar-title{
+                color: #F4F4F4;
+            }
+        }
+
         .search{
             float: right;
+
+            .mat-form-field-label{
+                padding: 0 8px;
+            }
         }
     }
 
